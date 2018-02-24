@@ -4,27 +4,56 @@
   <title>Home</title>
   <link rel="stylesheet" href="kscss.css">
   <link rel="stylesheet" href="animate.css">
+  <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://use.fontawesome.com/5a3a7fdc30.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 </head>
 
 <body>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
+
+	<script type="text/javascript" src="js/scrolloverflow.js"></script>
+
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				verticalCentered: true,
+				sectionsColor: ['#000', '#000', '#d3d3d3', '#d3d3d3','#d3d3d3']
+			});
+		});
+	</script>
+
 <div class="enter-site" id="window">
   <section class="part1 flex flex--space-around align-center columns">
-    <h1 class="" style="color:white;">Did you know that there were estimated to be around <span class="bignum">79</span> thousand deaths attributable to smoking.</h1>
-    <h1><span class="bignum">16%</span></h1>
-    <h1 >of deaths in the UK</h1>
+  <div class="back_box">
+    <div class="midofp1">
+    <h1 class="" style="color:white;">Did you know that there were,<br> estimated to be around <span class="bignum">79</span><br> thousand deaths attributable <br>to smoking.</h1>
+    <h1><span class="bignum">16%</span> of deaths in the UK.</h1>
+
+    <br>
+    <br>
+    <h1>- NHS DIGITAL</h1>
+  </div>
+
+</div>
   </section>
 
   <section class='part2 flex flex--space-around align-center'>
-    <h1 class="">Adults aged 25 to 34 were most likely to smoke <span class="bignum">(21%)</span>, with those aged 65 and over the least likely (8%).</h1>
+    <div class="back_box">
+    <h1 class="">Adults aged 25 to 34 were most likely to smoke <span class="bignum">(21%)</span>, with those aged 65 and over the least likely <span class="bignum">(8%)</span>.</h1>
+  </div>
   </section>
 
   <section class='part3 flex flex--space-around align-center'>
-    <h1 class=""><span class="bignum">54%</span> of deaths for cancers (that can be caused by smoking), were estimated to be attributable to smoking.</h1>
+    <div class="back_box">
+    <h1 class=""><span class="bignum">54%</span> of deaths for cancers (that can be<br> caused by smoking), were estimated<br>to be attributable to smoking.</h1>
+    <div>
   </section>
 
   <section class="part4 flex flex--space-around align-center">
@@ -37,52 +66,142 @@ smokers at the time of delivery, down from <span class="bignum">15%</span> in 20
   </section>
 
 </div>
-    <div id="main-body" class="main-body">
 
-      <div class="firstpart">
+    <div id="main-body" class="main-body">
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Video</a>
+        <a href="#">Our Message</a>
+        <a href="#">Our Research</a>
+        <a href="#">Inforgraphic</a>
+        <a href="#">Posters</a>
+        <a href="#">Contact</a>
+      </div>
       <div class="nav flex flex--space-between align-center">
         <div class="lg flex flex--start align-start">
-          <p>Logo</p>
+          <img class="logo" src="imgs/logo.png" alt="logo">
         </div>
         <div class="flex flex--space-between align-end">
-          <div class="whole">
-          <div id="menuicon">
-          </div>
-          <div id="menuicon">
-          </div>
-        </div>
-      </div>
-      </div>
-      <div class="firstpage">
-          <div class="infopart flex flex--space-around align-center rows">
-            <div class="fpstart flex flex--start align-start columns">
-              <h1 class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br><br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</h1>
-        </div>
-              <div class="gofc flex flex--space-between align-end columns">
-                <div class="circle">
-                </div>
-
-                <div class="circle">
-                </div>
-
-                <div class="circle">
-                </div>
-
-                <div class="circle">
-                </div>
-
-                <div class="circle">
-                </div>
-
+          <div class="mi" onclick="openNav()">
+            <div id="menuicon">
             </div>
-      </div>
-
+            <div style="width:10px;" id="menuicon">
+            </div>
           </div>
-
         </div>
-    </div>
+      </div>
+      <div id="fullpage">
+      	<div class="section " id="section0">
+      		<iframe id="myVideo" src="https://www.youtube.com/embed/haWBTtwQgvs?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      		<div class="layer flex flex--space-around align-center columns">
+      		</div>
+      	</div>
+      	<div class="section" id="section1" name="ouraim">
+      	    <div class="slide" id="slide1">
+              <div class="om flex flex--start columns">
+              <h1 >Our Aim</h1>
+              <p>Our aim is to increase awareness of the facilities and health risks associated with smoking and allow people to see how harmful smoking can be to themselves.
+              <br>
+              <br>
+              "Tobacco is the single most preventable cause of death in the world"
+              <br>
+
+              - Cancer Research UK</p>
+              </div>
+            </div>
+      	    <div class="slide" id="slide2">
+              <div class="or flex flex--start columns">
+              <h1>Our Research</h1>
+              <p> There are many risks of smoking such as:
+                <br>
+                <br>
+                - cononary heart disease
+                <br>
+                - heart attacks
+                <br>
+                - strokes
+                <br>
+                - damage to blood vessels
+                <br>
+                - damage to arteries that supply blood to your brain
+<br>
+<br>
+According to the NHS smoking causes cancer in the following areas:
+<br>
+*interactive human body*</p>
+              <div class="percentages">
+                <div class="flex flex--space-around rows">
+                  <div id="img1">
+                  </div>
+                  <div id="img2">
+                  </div>
+                  <div id="img3">
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+      	</div>
+      	<div class="section" id="section2">
+
+          <h1 class="flex flex--space-around align-center">Infographic</h1>
+        </div>
+      	<div class="section" id="section3">
+          <div class="slide" id="slide1">
+          <h1 class="flex flex--space-around align-center">Our Resources</h1>
+          <p class="flex flex--space-around align-center">We have provided different resources which you can print out and display in your local area</p>
+
+          <p class="flex flex--space-around align-center">Posters</p>
+          <div class="flex flex--space-around rows">
+            <div id="rect" class="rectangleone">
+            </div>
+            <div id="rect" class="rectangletwo">
+            </div>
+            <div id="rect" class="rectanglethree">
+            </div>
+          </div>
+        </div>
+        <div class="slide" id="slide2">
+          <h1 class="flex flex--space-around align-center">Our Resources</h1>
+          <p class="flex flex--space-around align-center">Animation</p>
+          <br>
+          <div class="vid flex flex--space-around align-center">
+            <div class="place">
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="section" id="section4">
+          <h1 class="flex flex--space-around align-center">Contact Us</h1>
+        </div>
+      </div>
+<div id="fp-nav" class="right" style="margin-top: -33.5px;"><ul><li>
+  <a href="#firstPage" class="active"><span></span></a>
+  <div class="fp-tooltip right">First</div></li><li>
+    <a href="#secondPage" class=""><span></span></a>
+  <div class="fp-tooltip right">Second</div></li><li>
+    <a href="#3rdPage" class=""><span></span></a>
+    <div class="fp-tooltip right">Third</div>
+    <a href="#fourthPage" class=""><span></span></a>
+    <div class="fp-tooltip right">Fourth</div>
+    <a href="#fifthPage" class=""><span></span></a>
+    <div class="fp-tooltip right">Fifth</div>
+  </li></ul></div>
     <footer>
     </footer>
   </div>
+  <script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main-body").style.marginRight = "250px";
+
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main-body").style.marginRight= "0";
+
+}
+</script>
 </body>
 </html>

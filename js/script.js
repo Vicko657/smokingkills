@@ -16,17 +16,17 @@ $(document).ready(function() {
     }
     showNext();
 
+    // $('#fullpage').fullpage({
+    // anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthpage', 'fifthpage']
+    // });
+    $('.main-body').css('display','none');
+
+    $('#enter, #skip').click(function(){
+      $('#window').fadeOut("slow");
+      // $("#window").css('opacity','0');
+      // $('#window').css('display','none');
+      $('#fp-nav').css('display','block');
+      $('.main-body').css('opacity','1');
+      $('.main-body').css('display','block');
+    });
 });
-var es = document.getElementById("enter");
-$(document).ready(function(){
-  $('.main-body').css('display','none');
-  $('#enter').click(function(){
-  $("#window").css('opacity','0');
-  $('#window').css('display','none');
-  $('.main-body').css('opacity','1');
-  $('.main-body').css('display','block');
-  });
-});
-es.onclick = function(){
-  $('#window').fadeOut("slow");
-};

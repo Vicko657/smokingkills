@@ -33,12 +33,12 @@
   <section class="part1 flex flex--space-around align-center columns">
   <div class="back_box">
     <div class="midofp1">
-    <h1 class="" style="color:white;">Did you know that there were,<br> estimated to be around <span class="bignum">79</span><br> thousand deaths attributable <br>to smoking.</h1>
-    <h1><span class="bignum">16%</span> of deaths in the UK.</h1>
-
+<img class="bloodline" src="imgs/bline.png" alt="img">
+    <h1 class="fact" style="color:white;">Did you know that there were,<br> estimated to be around <span class="bignum">79</span><br> thousand deaths attributable <br>to smoking.
+    <br><span class="bignum">16%</span> of deaths in the UK.
     <br>
     <br>
-    <h1>- NHS DIGITAL</h1>
+    - NHS DIGITAL</h1>
   </div>
 
 </div>
@@ -46,42 +46,57 @@
 
   <section class='part2 flex flex--space-around align-center'>
     <div class="back_box">
-    <h1 class="">Adults aged 25 to 34 were most likely to smoke <span class="bignum">(21%)</span>, with those aged 65 and over the least likely <span class="bignum">(8%)</span>.</h1>
+      <img class="cigarette" src="imgs/cig.png" alt="img">
+    <h1 class="fact">Adults aged 25 to 34 were most <br>likely to smoke<span class="bignum"> (21%)</span>, with<br> those aged 65 and over<br> the least likely <span class="bignum">(8%)</span>.
+      <br>
+      <br>
+      - NHS DIGITAL</h1>
   </div>
   </section>
 
   <section class='part3 flex flex--space-around align-center'>
     <div class="back_box">
-    <h1 class=""><span class="bignum">54%</span> of deaths for cancers (that can be<br> caused by smoking), were estimated<br>to be attributable to smoking.</h1>
+    <h1 class="fact"><span class="bignum">54%</span> of deaths for cancers (that can be<br> caused by smoking), were estimated<br>to be attributable to smoking.
+      <br>
+      <br>
+      - NHS DIGITAL</h1>
     <div>
   </section>
 
   <section class="part4 flex flex--space-around align-center">
-    <h1 class="">Just under <span class="bignum">11%</span> of mothers were recorded as
-smokers at the time of delivery, down from <span class="bignum">15%</span> in 2006/07.</h1>
+    <h1 class="fact">Just under <span class="bignum">11%</span> of mothers<br> were recorded as
+smokers at the time of<br> delivery, down from <span class="bignum">15%</span> in 2006/07.
+<br>
+<br>
+- NHS DIGITAL</h1>
   </section>
 
   <section class="part5 flex flex--space-around align-center">
-    <a id="enter"><h1><span class="glitch">Enter Site</span></h1></a>
+    <a id="enter"><h1><span class="">Enter Site</span></h1></a>
   </section>
-
+  <div class="skip" id="skip">
+    SKIP TO SITE
+  </div>
 </div>
 
     <div id="main-body" class="main-body">
+      <div class="lgb">
+          <img class="logo" src="imgs/logo.png" alt="logo">
+      </div>
       <div id="mySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Video</a>
-        <a href="#">Our Message</a>
-        <a href="#">Our Research</a>
-        <a href="#">Inforgraphic</a>
-        <a href="#">Posters</a>
-        <a href="#">Contact</a>
+        <a href="#page1">Video</a>
+        <a href="#page2">Our Aim</a>
+        <a href="#s1slide2">Our Research</a>
+        <a href="#page3">Infographic</a>
+        <a href="#page4">Our Resources</a>
+        <a href="#page5">Contact</a>
       </div>
       <div class="nav flex flex--space-between align-center">
         <div class="lg flex flex--start align-start">
-          <img class="logo" src="imgs/logo.png" alt="logo">
+
         </div>
-        <div class="flex flex--space-between align-end">
+        <div class="top flex flex--space-between align-end">
           <div class="mi" onclick="openNav()">
             <div id="menuicon">
             </div>
@@ -91,13 +106,13 @@ smokers at the time of delivery, down from <span class="bignum">15%</span> in 20
         </div>
       </div>
       <div id="fullpage">
-      	<div class="section " id="section0">
+      	<div class="section " id="section0"
+        data-anchor="page1">
       		<iframe id="myVideo" src="https://www.youtube.com/embed/haWBTtwQgvs?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      		<div class="layer flex flex--space-around align-center columns">
-      		</div>
       	</div>
-      	<div class="section" id="section1" name="ouraim">
-      	    <div class="slide" id="slide1">
+
+      	<div class="section" id="section1" data-anchor="page2" name="ouraim">
+      	    <div class="slide" id="s1slide1">
               <div class="om flex flex--start columns">
               <h1 >Our Aim</h1>
               <p>Our aim is to increase awareness of the facilities and health risks associated with smoking and allow people to see how harmful smoking can be to themselves.
@@ -109,7 +124,7 @@ smokers at the time of delivery, down from <span class="bignum">15%</span> in 20
               - Cancer Research UK</p>
               </div>
             </div>
-      	    <div class="slide" id="slide2">
+      	    <div class="slide" id="s1slide2">
               <div class="or flex flex--start columns">
               <h1>Our Research</h1>
               <p> There are many risks of smoking such as:
@@ -142,12 +157,12 @@ According to the NHS smoking causes cancer in the following areas:
             </div>
             </div>
       	</div>
-      	<div class="section" id="section2">
+      	<div class="section" id="section2" data-anchor="page3">
 
           <h1 class="flex flex--space-around align-center">Infographic</h1>
         </div>
-      	<div class="section" id="section3">
-          <div class="slide" id="slide1">
+      	<div class="section" id="section3" data-anchor="page4">
+          <div class="slide" id="s3slide1">
           <h1 class="flex flex--space-around align-center">Our Resources</h1>
           <p class="flex flex--space-around align-center">We have provided different resources which you can print out and display in your local area</p>
 
@@ -161,7 +176,7 @@ According to the NHS smoking causes cancer in the following areas:
             </div>
           </div>
         </div>
-        <div class="slide" id="slide2">
+        <div class="slide" id="s3slide2">
           <h1 class="flex flex--space-around align-center">Our Resources</h1>
           <p class="flex flex--space-around align-center">Animation</p>
           <br>
@@ -171,22 +186,11 @@ According to the NHS smoking causes cancer in the following areas:
           </div>
         </div>
       </div>
-        <div class="section" id="section4">
+        <div class="section" id="section4" data-anchor="page5">
           <h1 class="flex flex--space-around align-center">Contact Us</h1>
         </div>
       </div>
-<div id="fp-nav" class="right" style="margin-top: -33.5px;"><ul><li>
-  <a href="#firstPage" class="active"><span></span></a>
-  <div class="fp-tooltip right">First</div></li><li>
-    <a href="#secondPage" class=""><span></span></a>
-  <div class="fp-tooltip right">Second</div></li><li>
-    <a href="#3rdPage" class=""><span></span></a>
-    <div class="fp-tooltip right">Third</div>
-    <a href="#fourthPage" class=""><span></span></a>
-    <div class="fp-tooltip right">Fourth</div>
-    <a href="#fifthPage" class=""><span></span></a>
-    <div class="fp-tooltip right">Fifth</div>
-  </li></ul></div>
+
     <footer>
     </footer>
   </div>

@@ -122,61 +122,62 @@ h1{
 section{
   padding: 0px 50px 0px 50px;
 }
+.fact{
+  text-transform: uppercase;
+}
 .part1{
-  background: #232526;
-.smoke1{
-  position: absolute;
-  top:0;
-  left:0;
-  width: 290px;
-  height: 280px;
+  background: darkgreen;
+
+.bloodline{
+  width:390.166667px;
+  height:154.5px;
 }
 h1{
   font-size: 30px;
-  color: white;
+  color: transparent;
   letter-spacing: 3px;
+  text-shadow: 0 0 6px white;
 }
 .midofp1{
 
 }
-.back_box{
-  border: solid 2px lightgrey;
-  padding: 30px;
-}
 height: 100vh;
 }
 .part2{
-  background: black;
+  background: darkblue;
 h1{
   font-size: 30px;
   color: white;
   letter-spacing: 3px;
+  text-shadow: 0 0 6px white;
 }
-.back_box{
-  border: solid 2px lightgrey;
-  padding: 30px;
+.cigarette{
+
+  width:274.250001px;
+  height:108.25px;
+  margin-right: 190px;
 }
 height: 100vh;
 }
 .part3{
-  background: black;
+  background: darkred;
 h1{
   font-size: 30px;
   cursor:pointer;
   color: white;
-}
-.back_box{
-  border: solid 2px lightgrey;
-  padding: 30px;
+  letter-spacing: 3px;
+  text-shadow: 0 0 6px white;
 }
 height: 100vh;
 }
 .part4{
   background: black;
 h1{
-  font-size: 21px;
+  font-size: 30px;
   cursor:pointer;
   color: white;
+  letter-spacing: 3px;
+  text-shadow: 0 0 6px white;
 }
 height: 100vh;
 }
@@ -184,14 +185,22 @@ height: 100vh;
   background: #31302f;
   a{
     text-decoration: none;
+
   }
 h1{
-  font-size: 21px;
+  font-size: 30px;
   cursor:pointer;
-  color: black;
+  color: white;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  &:hover{
+    color: transparent;
+    text-shadow: 0 0 90px white;
+  }
 }
 height: 100vh;
 }
+
 .enter{
   cursor:pointer;
 }
@@ -354,6 +363,7 @@ a{
   z-index: 1;
   width:100%;
 }
+
 .lg{
   margin-left: 30px;
   margin-top: 10px;
@@ -361,6 +371,9 @@ a{
 .logo{
   width:87.625px;
   height:63px;
+}
+.top{
+  padding-top: 20px;
 }
 .mi{
   margin-right: 30px;
@@ -532,3 +545,32 @@ h1{
 .visible{
      opacity:1;
 }
+.skip{
+  color: #808080;
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+  padding: 5px 16px;
+  border: 1px #808080 solid;
+}
+.skip:hover{
+  color: #d3d3d3;
+  border-color: #d3d3d3;
+}
+#fp-nav{
+  display: none;
+}
+.fp-next{
+  margin-right: 50px;
+}
+.fp-prev{
+  margin-left: 50px;
+}
+.lgb{
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  z-index: 5;
+}
+.logo{ height: auto }

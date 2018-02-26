@@ -32,6 +32,20 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/imgs\/bline.png.tmp$$": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/imgs\/bline.png.tmp$$",
+		"oF": 0
+		},
+	"\/imgs\/cig.png": {
+		"ft": 32768,
+		"iS": 41592,
+		"oA": 0,
+		"oAP": "\/imgs\/cig.png",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/imgs\/flowers.mp4": {
 		"ft": 8192,
 		"oA": 2,
